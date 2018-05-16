@@ -1,0 +1,25 @@
+<project xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.kw-software.com/xml/PLCopen/TC6_XML_V10_KW.xsd">
+	<fileHeader companyName="Phoenix Contact" companyURL="https://www.phoenixcontact-software.com" productName="PC WORX" productVersion="6.30" productRelease="Build 245" creationDateTime="2018-05-16T23:22:27" contentDescription="###XMLINFO=1;1;"/>
+	<contentHeader name="demo_61850" version="1526502147" modificationDateTime="2018-05-16T23:22:27" connectionCheck="true">
+		<coordinateInfo>
+			<pageSize x="999" y="9999"/>
+			<fbd>
+				<scaling x="2" y="2"/>
+			</fbd>
+			<ld>
+				<scaling x="2" y="2"/>
+			</ld>
+			<sfc>
+				<scaling x="2" y="2"/>
+			</sfc>
+		</coordinateInfo>
+	</contentHeader>
+	<libraries/>
+	<types>
+		<dataTypes/>
+		<pous/>
+	</types>
+	<instances>
+		<configurations/>
+	</instances>
+</project>

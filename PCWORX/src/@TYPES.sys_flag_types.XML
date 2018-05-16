@@ -1,0 +1,51 @@
+<project xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.kw-software.com/xml/PLCopen/TC6_XML_V10_KW.xsd">
+	<fileHeader companyName="Phoenix Contact" companyURL="https://www.phoenixcontact-software.com" productName="PC WORX" productVersion="6.30" productRelease="Build 245" creationDateTime="2018-05-16T23:22:27" contentDescription="###XMLINFO=1;1;"/>
+	<contentHeader name="demo_61850" version="1526502147" modificationDateTime="2018-05-16T23:22:27" connectionCheck="true">
+		<coordinateInfo>
+			<pageSize x="999" y="9999"/>
+			<fbd>
+				<scaling x="2" y="2"/>
+			</fbd>
+			<ld>
+				<scaling x="2" y="2"/>
+			</ld>
+			<sfc>
+				<scaling x="2" y="2"/>
+			</sfc>
+		</coordinateInfo>
+	</contentHeader>
+	<types>
+		<dataTypes>
+			<datatypeWorksheet>
+				<html xmlns="http://www.w3.org/1999/xhtml">
+					<div xml:space="preserve" id="MWTDESCRIPTION" wsName="sys_flag_types" xmlns="http://www.w3.org/1999/xhtml">TYPE<br/>    Task_Name_Typ : ARRAY[0..9] OF BYTE;<br/>
+						<br/>    Extended_Task_Info : STRUCT<br/>	    TaskName           : Task_Name_Typ;  (* Name of the Task as ARRAY OF BYTE, NULL terminated *) <br/>	    TaskPrio           : INT;            (* Priority of the task *)<br/>	    undocumented_0     : INT;<br/>	    TaskPeriod         : INT;            (* Period of the task in milliseconds *)<br/>	    TaskStack          : INT;            (* Stack size of the task *)<br/>	    unused_1           : INT;<br/>	    TaskWatchdog       : INT;            (* Watchdog time in milliseconds *)<br/>	    undocumented_2     : INT;<br/>	    undocumented_3     : INT;<br/>	    undocumented_4     : INT;<br/>	    CurDuration        : INT;            (* Current task duration in ticks including preemption *)<br/>	    MinDuration        : INT;            (* Minimum task duration in ticks including preemption *)<br/>	    MaxDuration        : INT;            (* Maximum task duration in ticks including preemption *)<br/>	    undocumented_5     : INT;<br/>	    CurDelay           : INT;            (* Current task delay in ticks including preemption *)<br/>	    MinDelay           : INT;            (* Minimum task delay in ticks including preemption *)<br/>	    MaxDelay           : INT;            (* Maximum task delay in ticks including preemption *)<br/>    END_STRUCT;<br/>END_TYPE<br/>
+						<br/>TYPE<br/>	Task_Name_eCLR : ARRAY[0..35] OF BYTE;<br/>	<br/>	Task_Info_eCLR : STRUCT<br/>		TaskStack       : INT;            (* Stack size of the task *)<br/>		TaskPrio        : INT;            (* Priority of the task *)<br/>		TaskPeriod_us   : DINT;           (* Period of the task in microseconds *)<br/>		TaskWatchdog_us : DINT;           (* Watchdog time in microseconds *)<br/>		TaskPeriod      : INT;            (* Period of the task in milliseconds *)<br/>		TaskWatchdog    : INT;            (* Watchdog time in milliseconds *)<br/>		MinDuration_us  : DINT;           (* Minimum task duration in microseconds including preemption *)<br/>		MaxDuration_us  : DINT;           (* Maximum task duration in microseconds including preemption *)<br/>		CurDuration_us  : DINT;           (* Current task duration in microseconds including preemption *)<br/>		MinDelay_us     : DINT;           (* Minimum task delay in microseconds including preemption *)<br/>		MaxDelay_us     : DINT;           (* Maximum task delay in microseconds including preemption *)<br/>		CurDelay_us     : DINT;           (* Current task delay in microseconds including preemption *)<br/>		MinDuration     : INT;            (* Minimum task duration in milliseconds including preemption *)<br/>		MaxDuration     : INT;            (* Maximum task duration in milliseconds including preemption *)<br/>		CurDuration     : INT;            (* Current task duration in milliseconds including preemption *)<br/>		MinDelay        : INT;            (* Minimum task delay in milliseconds including preemption *)<br/>		MaxDelay        : INT;            (* Maximum task delay in milliseconds including preemption *)<br/>		CurDelay        : INT;            (* Current task delay in milliseconds including preemption *)<br/>		unused_1        : DINT;<br/>		unused_2        : DINT;<br/>		unused_3        : DINT;<br/>		unused_4        : DINT;<br/>		unused_5        : DINT;<br/>		unused_6        : DINT;<br/>		unused_7        : DINT;<br/>		unused_8        : DINT;<br/>		unused_9        : DINT;<br/>		TNameMaxSize    : INT;<br/>		TNameSize       : INT;<br/>		TaskName        : Task_Name_eCLR;<br/>	END_STRUCT;<br/>END_TYPE<br/> <br/>TYPE<br/>	PND_IO_32  : ARRAY[0..31]  OF BYTE;<br/>	PND_IO_64  : ARRAY[0..63]  OF BYTE;<br/>	PND_IO_128 : ARRAY[0..127] OF BYTE;<br/>	PND_IO_256 : ARRAY[0..255] OF BYTE;<br/>	PND_IO_512 : ARRAY[0..511] OF BYTE;<br/>END_TYPE<br/>
+						<br/>TYPE<br/>	Redundancy_OPC_Struct : ARRAY[0..2] OF INT;<br/>END_TYPE<br/> <br/>TYPE<br/>    MBT_STATION_DIAG : STRUCT<br/>	    Status           : DWORD; (* Bit 0 = Station is online*)<br/>	                              (* Bit 1 = Exception exits  *)<br/>
+						<br/>	    IP               : DWORD;<br/>	    OfflineCounter   : DWORD; (* Incremented by every shutdown of this station. *)<br/>
+						<br/>	    NetCycleAvg      : DWORD; (* ms. NetInCycleAvg + NetOutCycleAvg *)<br/>	    NetCycleMin      : DWORD; (* ms. *)<br/>	    NetCycleMax      : DWORD; (* ms. *)<br/>
+						<br/>	    NetInCycleAvg    : DWORD; (* ms. *)<br/>	    NetInCycleMin    : DWORD; (* ms. *)<br/>	    NetInCycleMax    : DWORD; (* ms. *)<br/>
+						<br/>	    NetOutCycleAvg   : DWORD; (* ms. *)<br/>	    NetOutCycleMin   : DWORD; (* ms. *)<br/>	    NetOutCycleMax   : DWORD; (* ms. *)<br/>
+						<br/>	    InternalError1   : DWORD; (* For internal use of Phoenix Contact! *)<br/>	    InternalError2   : DWORD; (* For internal use of Phoenix Contact! *)<br/>
+						<br/>	    ExceptionCounter : DWORD; (* Incremented by every Modbus exception received on this station. *)<br/>	    DiagReserved1    : BYTE;  (* Reserved for a later use! *)<br/>	    DiagReserved2    : BYTE;  (* Reserved for a later use! *)<br/>	    UnitID           : BYTE;  (* Modbus Unit Identifier *)<br/>	    DiagReserved3    : BYTE;  (* Reserved for a later use! *)<br/>    END_STRUCT;<br/>
+						<br/>    MBT_STATION_CONTROL : STRUCT<br/>	    ctrlStatistics      : BYTE;  (* Bit 0 = Clear  statistics *)<br/>	    ControlReserved1    : BYTE;  (* Reserved for a later use! *)<br/>	    ControlReserved2    : WORD;  (* Reserved for a later use! *)<br/>	    ControlReserved3    : DWORD; (* Reserved for a later use! *)<br/>    END_STRUCT;<br/>END_TYPE<br/>
+						<br/>TYPE<br/>	MBS_SERVER_STATUS : STRUCT<br/>		AcceptCnt              : DWORD;<br/>		AcceptErrorCnt         : DWORD;<br/>		ReceiveErrorCnt        : DWORD;<br/>		ModbusRequestCnt       : DWORD;<br/>		ModbusExceptionCnt     : DWORD;<br/>
+						<br/>		SocketErrorCode        : WORD;<br/>		TcpConnectedClients    : WORD;<br/>		LastExceptionRegister  : WORD;<br/>		LastExceptionRegLength : WORD;<br/>
+						<br/>		LastExceptionNode      : BYTE;<br/>		LastExceptionFunction  : BYTE;<br/>		LastExceptionCode      : BYTE;<br/>		reserved               : BYTE;<br/>	END_STRUCT;<br/>END_TYPE<br/>
+						<br/>TYPE<br/>	MBS_SERVER_CONTROL : STRUCT<br/>		Flags     : BYTE;<br/>		reserved1 : BYTE;<br/>		reserved2 : BYTE;<br/>		reserved3 : BYTE;<br/>	END_STRUCT;<br/>END_TYPE<br/>	<br/>TYPE<br/>	MBS_NODE_STATUS : STRUCT<br/>		ModbusRequestCnt   : DWORD;<br/>		ModbusExceptionCnt : DWORD;<br/>		Flags              : DWORD;<br/>		reserved           : DWORD;<br/>	END_STRUCT;<br/>END_TYPE<br/>
+						<br/>TYPE <br/>	PROFISAFE_DIAG_HEADER : STRUCT <br/>		NumberOfFConn         : UINT; (* number of F-Connections, max 256 *) <br/>		PLCHostStatusByte     : BYTE; (* status byte of Standard PLC *) <br/>		SPNSAgentStatusByte   : BYTE; (* status byte of SPNS agent *) <br/>		CycleCount            : UINT;   (* cycle count off the spns agent (update the shm diag area) *) <br/>	END_STRUCT;<br/>  <br/>	F_MESSAGE : ARRAY[0..15] OF BYTE; (* F-message: 16 bytes *) <br/>
+						<br/>	F_DEVICE_DIAG : STRUCT <br/>		FAddress     : WORD;      (* F address of device  *) <br/>		F_WD_Time    : WORD;      (* F WD time of device  *) <br/>		F_DataLenIn  : BYTE;      (* length of IN F data  *) <br/>		F_MessageIn  : F_MESSAGE; (* IN F data array      *) <br/>		F_DataLenOut : BYTE;      (* length of OUT F data *) <br/>		F_MessageOut : F_MESSAGE; (* OUT F data array     *) <br/>	END_STRUCT; <br/>
+						<br/>	DEVICE_DIAG_LIST : ARRAY[0..255] OF F_DEVICE_DIAG; (* array of F_DEVICE_DIAG structurs: 256 elem *) <br/>
+						<br/>	PROFISAFE_DIAG : STRUCT <br/>		ProfisafeDiagHeader : PROFISAFE_DIAG_HEADER; (* header *) <br/>		FDeviceDiagnostics  : DEVICE_DIAG_LIST;      (* list of diagnostics *) <br/>	END_STRUCT; <br/>END_TYPE<br/>
+						<br/>TYPE<br/>    OPCUA_STATUS_INFO           : STRUCT<br/>	  restartCount            : UDINT; (* each reset and clear cache is counted *)<br/>	  monitoredVariablesCount : UDINT; (* use IdataSource.GetSubscribedVariablesCount *)<br/>	  sessionsCount           : UDINT; (* &lt;-- get Data from ServerDiagnostic method GetTotalSubscribedVariablesCount *)<br/>	  isServerEnabled         : UDINT; (* fetched by conf API *)<br/>	  isLicensePresent        : UDINT; (* fetched by lic API *)<br/>	END_STRUCT;<br/>END_TYPE<br/>
+						<br/>TYPE<br/>    IEC61850_TIMESTAMP : STRUCT<br/>	    Seconds     : DWORD;<br/>		Fractions   : DWORD;<br/>        TimeQuality : DWORD;<br/>    END_STRUCT;<br/>END_TYPE<br/>
+					</div>
+				</html>
+			</datatypeWorksheet>
+		</dataTypes>
+		<pous/>
+	</types>
+	<instances>
+		<configurations/>
+	</instances>
+</project>

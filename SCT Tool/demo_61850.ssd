@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SCL xmlns="http://www.iec.ch/61850/2003/SCL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Header id="" toolID="SCT" />
+  <Substation name="demo_61850">
+    <VoltageLevel name="Voltagelevel1">
+      <Bay name="SwitchBay1" />
+    </VoltageLevel>
+  </Substation>
+</SCL>

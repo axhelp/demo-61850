@@ -1,0 +1,1107 @@
+<project xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.kw-software.com/xml/PLCopen/TC6_XML_V10_KW.xsd">
+	<fileHeader companyName="Phoenix Contact" companyURL="https://www.phoenixcontact-software.com" productName="PC WORX" productVersion="6.30" productRelease="Build 245" creationDateTime="2018-05-16T23:22:28" contentDescription="###XMLINFO=1;1;"/>
+	<contentHeader name="demo_61850" version="1526514334" modificationDateTime="2018-05-17T02:45:34" connectionCheck="true">
+		<coordinateInfo>
+			<pageSize x="999" y="9999"/>
+			<fbd>
+				<scaling x="2" y="2"/>
+			</fbd>
+			<ld>
+				<scaling x="2" y="2"/>
+			</ld>
+			<sfc>
+				<scaling x="2" y="2"/>
+			</sfc>
+		</coordinateInfo>
+	</contentHeader>
+	<types>
+		<dataTypes/>
+		<pous/>
+	</types>
+	<instances>
+		<configurations>
+			<configuration name="STD_CNF" plcType="eCLR">
+				<resource name="STD_RES" procType="AXC1050_30" watchdogTimeDefaultTask="00:00:00.100" stackDefaultTask="MEDIUM" saveFPUDefaultTask="false" noSuspendDefaultTask="false">
+					<globalVars retain="false">
+						<variable name="BK_SAS_Ind1_stVal" address="%IX16.0" group="IEC61850">
+							<type>
+								<BOOL/>
+							</type>
+						</variable>
+						<variable name="BK_SAS_Ind1_t" address="%IB4" group="IEC61850">
+							<type>
+								<derived name="IEC61850_TIMESTAMP"/>
+							</type>
+						</variable>
+						<variable name="GGIO1_SPCSO_stVal" address="%QX4.0" group="IEC61850">
+							<type>
+								<BOOL/>
+							</type>
+						</variable>
+						<variable name="AXIO_DIAG_PARAM_2_REG_HI" address="%MB1.60005" group="System Variables">
+							<type>
+								<BYTE/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Extended diagnostic parameter register high byte</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="AXIO_DIAG_PARAM_2_REG_LOW" address="%MB1.60004" group="System Variables">
+							<type>
+								<BYTE/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Extended diagnostic parameter register low byte</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="AXIO_DIAG_PARAM_REG_HI" address="%MB1.60003" group="System Variables">
+							<type>
+								<BYTE/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Diagnostic parameter register high byte</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="AXIO_DIAG_PARAM_REG_LOW" address="%MB1.60002" group="System Variables">
+							<type>
+								<BYTE/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Diagnostic parameter register low byte</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="AXIO_DIAG_STATUS_REG_ACT" address="%MX1.60154.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Selected configuration is ready to operate (derived from diagnostic status register)</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="AXIO_DIAG_STATUS_REG_BUS" address="%MX1.60150.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Bus error (derived from diagnostic status register)</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="AXIO_DIAG_STATUS_REG_HI" address="%MB1.60001" group="System Variables">
+							<type>
+								<BYTE/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Diagnostic status register high byte</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="AXIO_DIAG_STATUS_REG_LOW" address="%MB1.60000" group="System Variables">
+							<type>
+								<BYTE/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Diagnostic status register low byte</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="AXIO_DIAG_STATUS_REG_PF" address="%MX1.60149.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Peripheral fault (derived from diagnostic status register)</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="AXIO_DIAG_STATUS_REG_PW" address="%MX1.60148.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Peripheral warning (derived from diagnostic status register)</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="AXIO_DIAG_STATUS_REG_RDY" address="%MX1.60155.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Controller board ready to operate (derived from diagnostic status register)</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="AXIO_DIAG_STATUS_REG_RUN" address="%MX1.60153.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Data transmission active (derived from diagnostic status register)</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="AXIO_DIAG_STATUS_REG_SYSFAIL" address="%MX1.60141.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">The controller is in the STOP state or no application program is loaded.</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="CLOCK_PULSE_10S" address="%MX1.103.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Clock pulse 10s</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="CLOCK_PULSE_1S" address="%MX1.100.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Clock pulse 1s</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="CLOCK_PULSE_2S" address="%MX1.101.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Clock pulse 2s</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="CLOCK_PULSE_5S" address="%MX1.102.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Clock pulse 5s</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="COP_CPU_LOAD_WARNING" address="%MX1.60182.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">The controller is approaching its processor capacity limit</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="COP_DIAG_PARAM_2_REG" address="%MW1.60024" group="System Variables">
+							<type>
+								<WORD/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Extended diagnostic parameter register of the control processor</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="COP_DIAG_PARAM_REG" address="%MW1.60022" group="System Variables">
+							<type>
+								<WORD/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Diagnostic parameter register of the control processor</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="COP_DIAG_STATUS_REG_FAT_ERR" address="%MX1.60157.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Fatal error (control processor)</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="COP_DIAG_STATUS_REG_FC_DBG" address="%MX1.60164.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Runtime system DEBUG</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="COP_DIAG_STATUS_REG_FC_HALT" address="%MX1.60162.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Runtime system HALT</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="COP_DIAG_STATUS_REG_FC_LDG" address="%MX1.60163.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Runtime system LOADING</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="COP_DIAG_STATUS_REG_FC_RDO" address="%MX1.60165.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Runtime system READONLY</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="COP_DIAG_STATUS_REG_FC_RUN" address="%MX1.60160.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Runtime system RUN</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="COP_DIAG_STATUS_REG_FC_STOP" address="%MX1.60161.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Runtime system STOP</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="COP_DIAG_STATUS_REG_PON" address="%MX1.60159.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Power on (control processor)</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="COP_DIAG_STATUS_REG_RT_ERR" address="%MX1.60156.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Runtime error (control processor)</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="COP_DIAG_STATUS_REG_WARN" address="%MX1.60158.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Warning (control processor)</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="DC_AMOUNT" address="%MD1.3072" group="System Variables">
+							<type>
+								<UDINT/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Amount of successfull Download Changes on the current project.</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="DISABLE_CLOCK_PULSE" address="%MX2.2.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Disable the update of the clock pulse variables. This may save CPU load on controllers with a poor processor if these variables are not needed. <br/>FALSE: Clock Pulse variables are updated.<br/>TRUE: Clock Pulse variables are not updated.<br/>Default value is FALSE.</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="FLASHCARD_PRESENT" address="%MX1.60168.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Phoenix Contact SD card inserted</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="IS_EXECUTING_BOOT_PROJECT" address="%MX1.2042.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Boot project is executed.</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="IS_PRJ_RAM_AND_BOOT_CONSISTENT" address="%MX1.2043.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">The executed project and the boot project are binary equal.</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="KEY_SWITCH_RESET" address="%MX1.60178.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Start/stop switch in MRESET position</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="KEY_SWITCH_RUN_PROG" address="%MX1.60181.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Start/stop switch in RUN/PROG position</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="KEY_SWITCH_STOP" address="%MX1.60179.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Start/stop switch in STOP position</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="LAN_PORT1_1_LINK" address="%MX1.60220.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">The Ethernet port is connected</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="LAN_PORT1_2_LINK" address="%MX1.60223.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">The Ethernet port is connected</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="LICENSE" address="%MD1.60112" group="System Variables">
+							<type>
+								<DWORD/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">License information</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLC_CFG_NAME" address="%MB1.300" group="System Variables">
+							<type>
+								<string length="80"/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Configuration Name in PC WORX</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLC_ERRORS" address="%MD1.2008" group="System Variables">
+							<type>
+								<DINT/>
+							</type>
+						</variable>
+						<variable name="PLC_HAS_PRJ_BOOT" address="%MX1.2041.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Boot project available.</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLC_HAS_PRJ_CMP_DATA" address="%MX1.110.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Project contains additional data for the PC WORX online project compare functionality.</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLC_HAS_PRJ_SRC" address="%MX1.2044.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Project sources exist on PLC.</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLC_MAX_ERRORS" address="%MD1.2004" group="System Variables">
+							<type>
+								<DINT/>
+							</type>
+						</variable>
+						<variable name="PLC_PRJ_NAME" address="%MB1.200" group="System Variables">
+							<type>
+								<string length="80"/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Project Name in PC WORX</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLC_RES_NAME" address="%MB1.400" group="System Variables">
+							<type>
+								<string length="80"/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Resource Name in PC WORX</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLC_SYS_TICK_CNT" address="%MD1.0" group="System Variables">
+							<type>
+								<DINT/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Number of system ticks</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLC_SYSTASK_AVAILABLE" address="%MW1.2016" group="System Variables">
+							<type>
+								<INT/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Number of available system tasks</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLC_TASK_1" address="%MB1.5000" group="System Variables">
+							<type>
+								<derived name="Task_Info_eCLR"/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Task 1 information</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLC_TASK_2" address="%MB1.5128" group="System Variables">
+							<type>
+								<derived name="Task_Info_eCLR"/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Task 2 information</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLC_TASK_3" address="%MB1.5256" group="System Variables">
+							<type>
+								<derived name="Task_Info_eCLR"/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Task 3 information</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLC_TASK_4" address="%MB1.5384" group="System Variables">
+							<type>
+								<derived name="Task_Info_eCLR"/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Task 4 information</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLC_TASK_5" address="%MB1.5512" group="System Variables">
+							<type>
+								<derived name="Task_Info_eCLR"/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Task 5 information</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLC_TASK_6" address="%MB1.5640" group="System Variables">
+							<type>
+								<derived name="Task_Info_eCLR"/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Task 6 information</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLC_TASK_7" address="%MB1.5768" group="System Variables">
+							<type>
+								<derived name="Task_Info_eCLR"/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Task 7 information</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLC_TASK_8" address="%MB1.5896" group="System Variables">
+							<type>
+								<derived name="Task_Info_eCLR"/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Task 8 information</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLC_TASK_AVAILABLE" address="%MW1.2012" group="System Variables">
+							<type>
+								<INT/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Number of available PLC tasks</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLC_TASK_DEFINED" address="%MW1.4" group="System Variables">
+							<type>
+								<INT/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Number of tasks used</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLC_TICKS_PER_SEC" address="%MW1.2000" group="System Variables">
+							<type>
+								<INT/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">System ticks per second</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLCDEBUG_BPSET" address="%MX1.2019.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Breakpoint set</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLCDEBUG_FORCE" address="%MX1.2018.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Variable(s) forced</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLCDEBUG_POWERFLOW" address="%MX1.2020.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Address status enabled</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLCMODE_HALT" address="%MX1.8.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">PLC status HALT</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLCMODE_LOADING" address="%MX1.2017.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">PLC status LOADING</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLCMODE_ON" address="%MX1.2016.0" pdd="true" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">PLC status ON</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLCMODE_RUN" address="%MX1.7.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">PLC status RUN</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PLCMODE_STOP" address="%MX1.6.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">PLC status STOP</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PND_IO_DRIVEN_BY_PLC" address="%IW63978" group="System Variables">
+							<type>
+								<INT/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Number of the PLC currently connected with the PNIO Device</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PND_RESET_FACTORY_SETTINGS" address="%MW3.61060" group="System Variables">
+							<type>
+								<WORD/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">shows the bits of the kind of a reset to factory service</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PND_S1_DATA_LENGTH" address="%IW63976" group="System Variables">
+							<type>
+								<WORD/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Process data length</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PND_S1_INPUT_STATUS_GOOD" address="%IX63975.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">IOC status of the higher-level control system</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PND_S1_INPUTS" address="%IB63988" group="System Variables">
+							<type>
+								<derived name="PND_IO_256"/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Input process data</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PND_S1_OUTPUT_STATUS_GOOD" address="%IX63974.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">IOP status of the higher-level control system</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PND_S1_OUTPUTS" address="%QB63988" group="System Variables">
+							<type>
+								<derived name="PND_IO_256"/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Output process data</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PND_S1_PLC_RUN" address="%IX63972.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Status of the higher-level control system</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PND_S1_VALID_DATA_CYCLE" address="%IX63973.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">IO Controller has established the connection</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PNIO_CONFIG_STATUS" address="%MW1.60200" group="System Variables">
+							<type>
+								<WORD/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Current configuration status of the context manager</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PNIO_CONFIG_STATUS_ACTIVE" address="%MX1.60203.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Communication started</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PNIO_CONFIG_STATUS_CFG_FAULT" address="%MX1.60204.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Configuration error</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PNIO_CONFIG_STATUS_READY" address="%MX1.60202.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Context manager active</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PNIO_DIAG_AVAILABLE" address="%MX1.60214.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Diagnostic available</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PNIO_FORCE_FAILSAFE" address="%MX3.61100.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">All PROFINET devices are prompted to set their configured substitute values</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PNIO_MAINTENANCE_DEMANDED" address="%MX1.60216.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Maintenance demanded</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PNIO_MAINTENANCE_REQUIRED" address="%MX1.60215.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Maintenance required</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PNIO_SYSTEM_BF" address="%MX1.60208.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Missing connection to a configured PROFINET device</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="PNIO_SYSTEM_SF" address="%MX1.60210.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Diagnostic alarm for a configured PROFINET device</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="POWER_SUPPLY_MAIN_OK" address="%MX1.60171.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">24 V main supply voltage OK</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="RTC_BATTERY_LOW" address="%MX1.60166.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Realtime clock battery capacity low</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="RTC_DATA_INVALID" address="%MX1.60167.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Realtime clock data invalid</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="RTC_DAY" address="%MW1.60068" group="System Variables">
+							<type>
+								<INT/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">System time (day)</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="RTC_HOURS" address="%MW1.60060" group="System Variables">
+							<type>
+								<INT/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">System time (hours)</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="RTC_MINUTES" address="%MW1.60062" group="System Variables">
+							<type>
+								<INT/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">System time (minutes)</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="RTC_MONTH" address="%MW1.60070" group="System Variables">
+							<type>
+								<INT/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">System time (month)</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="RTC_SECONDS" address="%MW1.60064" group="System Variables">
+							<type>
+								<INT/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">System time (seconds)</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="RTC_YEAR" address="%MW1.60072" group="System Variables">
+							<type>
+								<INT/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">System time (year)</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="UPS_BATTERY_OK" address="%MX1.60175.0" group="System Variables">
+							<type>
+								<BOOL/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">UPS battery fully charged</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="I_1_IN0" address="%IX1.0" group="Auto">
+							<type>
+								<BOOL/>
+							</type>
+						</variable>
+						<variable name="I_1_IN1" address="%IX1.1" group="Auto">
+							<type>
+								<BOOL/>
+							</type>
+						</variable>
+						<variable name="I_1_IN2" address="%IX1.2" group="Auto">
+							<type>
+								<BOOL/>
+							</type>
+						</variable>
+						<variable name="I_1_IN3" address="%IX1.3" group="Auto">
+							<type>
+								<BOOL/>
+							</type>
+						</variable>
+						<variable name="I_1_IN4" address="%IX1.4" group="Auto">
+							<type>
+								<BOOL/>
+							</type>
+						</variable>
+						<variable name="I_1_IN5" address="%IX1.5" group="Auto">
+							<type>
+								<BOOL/>
+							</type>
+						</variable>
+						<variable name="I_1_IN6" address="%IX1.6" group="Auto">
+							<type>
+								<BOOL/>
+							</type>
+						</variable>
+						<variable name="I_1_IN7" address="%IX1.7" group="Auto">
+							<type>
+								<BOOL/>
+							</type>
+						</variable>
+						<variable name="Q_1_OUT0" address="%QX1.0" group="Auto">
+							<type>
+								<BOOL/>
+							</type>
+						</variable>
+						<variable name="Q_1_OUT1" address="%QX1.1" group="Auto">
+							<type>
+								<BOOL/>
+							</type>
+						</variable>
+						<variable name="Q_1_OUT2" address="%QX1.2" group="Auto">
+							<type>
+								<BOOL/>
+							</type>
+						</variable>
+						<variable name="Q_1_OUT3" address="%QX1.3" group="Auto">
+							<type>
+								<BOOL/>
+							</type>
+						</variable>
+						<variable name="Q_1_OUT4" address="%QX1.4" group="Auto">
+							<type>
+								<BOOL/>
+							</type>
+						</variable>
+						<variable name="Q_1_OUT5" address="%QX1.5" group="Auto">
+							<type>
+								<BOOL/>
+							</type>
+						</variable>
+						<variable name="Q_1_OUT6" address="%QX1.6" group="Auto">
+							<type>
+								<BOOL/>
+							</type>
+						</variable>
+						<variable name="Q_1_OUT7" address="%QX1.7" group="Auto">
+							<type>
+								<BOOL/>
+							</type>
+						</variable>
+					</globalVars>
+					<pouInstance name="Main:Main" type="program"/>
+				</resource>
+			</configuration>
+		</configurations>
+	</instances>
+</project>

@@ -1,0 +1,121 @@
+%IX16.0;BOOL;STD_CNF STD_RES BK_SAS_Ind1_stVal;
+%IB4;IEC61850_TIMESTAMP;STD_CNF STD_RES BK_SAS_Ind1_t;
+%QX4.0;BOOL;STD_CNF STD_RES GGIO1_SPCSO_stVal;
+%MX1.2016.0;BOOL;STD_CNF STD_RES PLCMODE_ON;PLC status ON
+%MX1.2017.0;BOOL;STD_CNF STD_RES PLCMODE_LOADING;PLC status LOADING
+%MX1.7.0;BOOL;STD_CNF STD_RES PLCMODE_RUN;PLC status RUN
+%MX1.6.0;BOOL;STD_CNF STD_RES PLCMODE_STOP;PLC status STOP
+%MX1.8.0;BOOL;STD_CNF STD_RES PLCMODE_HALT;PLC status HALT
+%MX1.2019.0;BOOL;STD_CNF STD_RES PLCDEBUG_BPSET;Breakpoint set
+%MX1.2018.0;BOOL;STD_CNF STD_RES PLCDEBUG_FORCE;Variable(s) forced
+%MX1.2020.0;BOOL;STD_CNF STD_RES PLCDEBUG_POWERFLOW;Address status enabled
+%MW1.2000;INT;STD_CNF STD_RES PLC_TICKS_PER_SEC;System ticks per second
+%MD1.0;DINT;STD_CNF STD_RES PLC_SYS_TICK_CNT;Number of system ticks
+%MW1.2012;INT;STD_CNF STD_RES PLC_TASK_AVAILABLE;Number of available PLC tasks
+%MW1.2016;INT;STD_CNF STD_RES PLC_SYSTASK_AVAILABLE;Number of available system tasks
+%MD1.2004;DINT;STD_CNF STD_RES PLC_MAX_ERRORS;
+%MD1.2008;DINT;STD_CNF STD_RES PLC_ERRORS;
+%MW1.4;INT;STD_CNF STD_RES PLC_TASK_DEFINED;Number of tasks used
+%MB1.5000;Task_Info_eCLR;STD_CNF STD_RES PLC_TASK_1;Task 1 information
+%MB1.5128;Task_Info_eCLR;STD_CNF STD_RES PLC_TASK_2;Task 2 information
+%MB1.5256;Task_Info_eCLR;STD_CNF STD_RES PLC_TASK_3;Task 3 information
+%MB1.5384;Task_Info_eCLR;STD_CNF STD_RES PLC_TASK_4;Task 4 information
+%MB1.5512;Task_Info_eCLR;STD_CNF STD_RES PLC_TASK_5;Task 5 information
+%MB1.5640;Task_Info_eCLR;STD_CNF STD_RES PLC_TASK_6;Task 6 information
+%MB1.5768;Task_Info_eCLR;STD_CNF STD_RES PLC_TASK_7;Task 7 information
+%MB1.5896;Task_Info_eCLR;STD_CNF STD_RES PLC_TASK_8;Task 8 information
+%MD1.60112;DWORD;STD_CNF STD_RES LICENSE;License information
+%MB1.60001;BYTE;STD_CNF STD_RES AXIO_DIAG_STATUS_REG_HI;Diagnostic status register high byte
+%MB1.60000;BYTE;STD_CNF STD_RES AXIO_DIAG_STATUS_REG_LOW;Diagnostic status register low byte
+%MB1.60003;BYTE;STD_CNF STD_RES AXIO_DIAG_PARAM_REG_HI;Diagnostic parameter register high byte
+%MB1.60002;BYTE;STD_CNF STD_RES AXIO_DIAG_PARAM_REG_LOW;Diagnostic parameter register low byte
+%MB1.60005;BYTE;STD_CNF STD_RES AXIO_DIAG_PARAM_2_REG_HI;Extended diagnostic parameter register high byte
+%MB1.60004;BYTE;STD_CNF STD_RES AXIO_DIAG_PARAM_2_REG_LOW;Extended diagnostic parameter register low byte
+%MX1.60149.0;BOOL;STD_CNF STD_RES AXIO_DIAG_STATUS_REG_PF;Peripheral fault (derived from diagnostic status register)
+%MX1.60148.0;BOOL;STD_CNF STD_RES AXIO_DIAG_STATUS_REG_PW;Peripheral warning (derived from diagnostic status register)
+%MX1.60150.0;BOOL;STD_CNF STD_RES AXIO_DIAG_STATUS_REG_BUS;Bus error (derived from diagnostic status register)
+%MX1.60153.0;BOOL;STD_CNF STD_RES AXIO_DIAG_STATUS_REG_RUN;Data transmission active (derived from diagnostic status register)
+%MX1.60154.0;BOOL;STD_CNF STD_RES AXIO_DIAG_STATUS_REG_ACT;Selected configuration is ready to operate (derived from diagnostic status register)
+%MX1.60155.0;BOOL;STD_CNF STD_RES AXIO_DIAG_STATUS_REG_RDY;Controller board ready to operate (derived from diagnostic status register)
+%MX1.60141.0;BOOL;STD_CNF STD_RES AXIO_DIAG_STATUS_REG_SYSFAIL;The controller is in the STOP state or no application program is loaded.
+%MX3.61100.0;BOOL;STD_CNF STD_RES PNIO_FORCE_FAILSAFE;All PROFINET devices are prompted to set their configured substitute values
+%MW1.60200;WORD;STD_CNF STD_RES PNIO_CONFIG_STATUS;Current configuration status of the context manager
+%MX1.60202.0;BOOL;STD_CNF STD_RES PNIO_CONFIG_STATUS_READY;Context manager active
+%MX1.60203.0;BOOL;STD_CNF STD_RES PNIO_CONFIG_STATUS_ACTIVE;Communication started
+%MX1.60204.0;BOOL;STD_CNF STD_RES PNIO_CONFIG_STATUS_CFG_FAULT;Configuration error
+%MX1.60208.0;BOOL;STD_CNF STD_RES PNIO_SYSTEM_BF;Missing connection to a configured PROFINET device
+%MX1.60210.0;BOOL;STD_CNF STD_RES PNIO_SYSTEM_SF;Diagnostic alarm for a configured PROFINET device
+%MX1.60214.0;BOOL;STD_CNF STD_RES PNIO_DIAG_AVAILABLE;Diagnostic available
+%MX1.60215.0;BOOL;STD_CNF STD_RES PNIO_MAINTENANCE_REQUIRED;Maintenance required
+%MX1.60216.0;BOOL;STD_CNF STD_RES PNIO_MAINTENANCE_DEMANDED;Maintenance demanded
+%IX63972.0;BOOL;STD_CNF STD_RES PND_S1_PLC_RUN;Status of the higher-level control system
+%IX63973.0;BOOL;STD_CNF STD_RES PND_S1_VALID_DATA_CYCLE;IO Controller has established the connection
+%IX63974.0;BOOL;STD_CNF STD_RES PND_S1_OUTPUT_STATUS_GOOD;IOP status of the higher-level control system
+%IX63975.0;BOOL;STD_CNF STD_RES PND_S1_INPUT_STATUS_GOOD;IOC status of the higher-level control system
+%IW63976;WORD;STD_CNF STD_RES PND_S1_DATA_LENGTH;Process data length
+%QB63988;PND_IO_256;STD_CNF STD_RES PND_S1_OUTPUTS;Output process data
+%IB63988;PND_IO_256;STD_CNF STD_RES PND_S1_INPUTS;Input process data
+%IW63978;INT;STD_CNF STD_RES PND_IO_DRIVEN_BY_PLC;Number of the PLC currently connected with the PNIO Device
+%MX1.60156.0;BOOL;STD_CNF STD_RES COP_DIAG_STATUS_REG_RT_ERR;Runtime error (control processor)
+%MX1.60157.0;BOOL;STD_CNF STD_RES COP_DIAG_STATUS_REG_FAT_ERR;Fatal error (control processor)
+%MX1.60158.0;BOOL;STD_CNF STD_RES COP_DIAG_STATUS_REG_WARN;Warning (control processor)
+%MX1.60159.0;BOOL;STD_CNF STD_RES COP_DIAG_STATUS_REG_PON;Power on (control processor)
+%MX1.60160.0;BOOL;STD_CNF STD_RES COP_DIAG_STATUS_REG_FC_RUN;Runtime system RUN
+%MX1.60161.0;BOOL;STD_CNF STD_RES COP_DIAG_STATUS_REG_FC_STOP;Runtime system STOP
+%MX1.60162.0;BOOL;STD_CNF STD_RES COP_DIAG_STATUS_REG_FC_HALT;Runtime system HALT
+%MX1.60163.0;BOOL;STD_CNF STD_RES COP_DIAG_STATUS_REG_FC_LDG;Runtime system LOADING
+%MX1.60164.0;BOOL;STD_CNF STD_RES COP_DIAG_STATUS_REG_FC_DBG;Runtime system DEBUG
+%MX1.60165.0;BOOL;STD_CNF STD_RES COP_DIAG_STATUS_REG_FC_RDO;Runtime system READONLY
+%MW1.60022;WORD;STD_CNF STD_RES COP_DIAG_PARAM_REG;Diagnostic parameter register of the control processor
+%MW1.60024;WORD;STD_CNF STD_RES COP_DIAG_PARAM_2_REG;Extended diagnostic parameter register of the control processor
+%MX1.60175.0;BOOL;STD_CNF STD_RES UPS_BATTERY_OK;UPS battery fully charged
+%MX1.60182.0;BOOL;STD_CNF STD_RES COP_CPU_LOAD_WARNING;The controller is approaching its processor capacity limit
+%MX1.60166.0;BOOL;STD_CNF STD_RES RTC_BATTERY_LOW;Realtime clock battery capacity low
+%MX1.60167.0;BOOL;STD_CNF STD_RES RTC_DATA_INVALID;Realtime clock data invalid
+%MX1.60168.0;BOOL;STD_CNF STD_RES FLASHCARD_PRESENT;Phoenix Contact SD card inserted
+%MX1.60171.0;BOOL;STD_CNF STD_RES POWER_SUPPLY_MAIN_OK;24 V main supply voltage OK
+%MX1.60178.0;BOOL;STD_CNF STD_RES KEY_SWITCH_RESET;Start/stop switch in MRESET position
+%MX1.60179.0;BOOL;STD_CNF STD_RES KEY_SWITCH_STOP;Start/stop switch in STOP position
+%MX1.60181.0;BOOL;STD_CNF STD_RES KEY_SWITCH_RUN_PROG;Start/stop switch in RUN/PROG position
+%MX1.60220.0;BOOL;STD_CNF STD_RES LAN_PORT1_1_LINK;The Ethernet port is connected
+%MX1.60223.0;BOOL;STD_CNF STD_RES LAN_PORT1_2_LINK;The Ethernet port is connected
+%MW1.60060;INT;STD_CNF STD_RES RTC_HOURS;System time (hours)
+%MW1.60062;INT;STD_CNF STD_RES RTC_MINUTES;System time (minutes)
+%MW1.60064;INT;STD_CNF STD_RES RTC_SECONDS;System time (seconds)
+%MW1.60068;INT;STD_CNF STD_RES RTC_DAY;System time (day)
+%MW1.60070;INT;STD_CNF STD_RES RTC_MONTH;System time (month)
+%MW1.60072;INT;STD_CNF STD_RES RTC_YEAR;System time (year)
+%MW3.61060;WORD;STD_CNF STD_RES PND_RESET_FACTORY_SETTINGS;shows the bits of the kind of a reset to factory service
+%MX1.100.0;BOOL;STD_CNF STD_RES CLOCK_PULSE_1S;Clock pulse 1s
+%MX1.101.0;BOOL;STD_CNF STD_RES CLOCK_PULSE_2S;Clock pulse 2s
+%MX1.102.0;BOOL;STD_CNF STD_RES CLOCK_PULSE_5S;Clock pulse 5s
+%MX1.103.0;BOOL;STD_CNF STD_RES CLOCK_PULSE_10S;Clock pulse 10s
+%MX2.2.0;BOOL;STD_CNF STD_RES DISABLE_CLOCK_PULSE;Disable the update of the clock pulse variables. This may save CPU load on controllers with a poor processor if these variables are not needed. 
+FALSE: Clock Pulse variables are updated.
+TRUE: Clock Pulse variables are not updated.
+Default value is FALSE.
+%MX1.110.0;BOOL;STD_CNF STD_RES PLC_HAS_PRJ_CMP_DATA;Project contains additional data for the PC WORX online project compare functionality.
+%MX1.2041.0;BOOL;STD_CNF STD_RES PLC_HAS_PRJ_BOOT;Boot project available.
+%MX1.2042.0;BOOL;STD_CNF STD_RES IS_EXECUTING_BOOT_PROJECT;Boot project is executed.
+%MX1.2043.0;BOOL;STD_CNF STD_RES IS_PRJ_RAM_AND_BOOT_CONSISTENT;The executed project and the boot project are binary equal.
+%MX1.2044.0;BOOL;STD_CNF STD_RES PLC_HAS_PRJ_SRC;Project sources exist on PLC.
+%MB1.200;STRING;STD_CNF STD_RES PLC_PRJ_NAME;Project Name in PC WORX
+%MB1.300;STRING;STD_CNF STD_RES PLC_CFG_NAME;Configuration Name in PC WORX
+%MB1.400;STRING;STD_CNF STD_RES PLC_RES_NAME;Resource Name in PC WORX
+%MD1.3072;UDINT;STD_CNF STD_RES DC_AMOUNT;Amount of successfull Download Changes on the current project.
+%IX1.0;BOOL;STD_CNF STD_RES I_1_IN0;
+%IX1.1;BOOL;STD_CNF STD_RES I_1_IN1;
+%IX1.2;BOOL;STD_CNF STD_RES I_1_IN2;
+%IX1.3;BOOL;STD_CNF STD_RES I_1_IN3;
+%IX1.4;BOOL;STD_CNF STD_RES I_1_IN4;
+%IX1.5;BOOL;STD_CNF STD_RES I_1_IN5;
+%IX1.6;BOOL;STD_CNF STD_RES I_1_IN6;
+%IX1.7;BOOL;STD_CNF STD_RES I_1_IN7;
+%QX1.0;BOOL;STD_CNF STD_RES Q_1_OUT0;
+%QX1.1;BOOL;STD_CNF STD_RES Q_1_OUT1;
+%QX1.2;BOOL;STD_CNF STD_RES Q_1_OUT2;
+%QX1.3;BOOL;STD_CNF STD_RES Q_1_OUT3;
+%QX1.4;BOOL;STD_CNF STD_RES Q_1_OUT4;
+%QX1.5;BOOL;STD_CNF STD_RES Q_1_OUT5;
+%QX1.6;BOOL;STD_CNF STD_RES Q_1_OUT6;
+%QX1.7;BOOL;STD_CNF STD_RES Q_1_OUT7;

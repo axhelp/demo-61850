@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<DriverSettings>
+<JobList>
+<Job>
+<Name Type="0" Station="IED_AXC_1050" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 1</Name>
+<VariableList/>
+<TotalJobSize>1</TotalJobSize>
+<TagList>
+<Tag variable="IED_AXC_1050LDevice1_LLN0_RP_RCB1_IED_AXC_1050LDevice1_GGIO1_ST_SPCSO1_stVal" type="0" offset="0" size="1">IED_AXC_1050LDevice1_LLN0_RP_RCB1_IED_AXC_1050LDevice1_GGIO1_ST_SPCSO1_stVal</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_AXC_1050LDevice1" LogicalNodeName="GGIO1" FunctionalConstraint="1" DataName="SPCSO1.stVal" MMSDataType="0" DataMaxLength="0" RetryOutput="false" ReportDevice="IED_AXC_1050LDevice1" ReportNode="LLN0" ReportName="RCB101" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_AXC_1050" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 2</Name>
+<VariableList/>
+<TotalJobSize>4</TotalJobSize>
+<TagList>
+<Tag variable="IED_AXC_1050LDevice1_LLN0_RP_RCB1_BufTm" type="6" offset="0" size="4">IED_AXC_1050LDevice1_LLN0_RP_RCB1_BufTm</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_AXC_1050LDevice1" LogicalNodeName="LLN0" FunctionalConstraint="9" DataName="RCB1.BufTm" MMSDataType="6" DataMaxLength="0" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_AXC_1050" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 3</Name>
+<VariableList/>
+<TotalJobSize>4</TotalJobSize>
+<TagList>
+<Tag variable="IED_AXC_1050LDevice1_LLN0_RP_RCB1_ConfRev" type="6" offset="0" size="4">IED_AXC_1050LDevice1_LLN0_RP_RCB1_ConfRev</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_AXC_1050LDevice1" LogicalNodeName="LLN0" FunctionalConstraint="9" DataName="RCB1.ConfRev" MMSDataType="6" DataMaxLength="0" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_AXC_1050" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 4</Name>
+<VariableList/>
+<TotalJobSize>129</TotalJobSize>
+<TagList>
+<Tag variable="IED_AXC_1050LDevice1_LLN0_RP_RCB1_DatSet" type="9" offset="0" size="129">IED_AXC_1050LDevice1_LLN0_RP_RCB1_DatSet</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_AXC_1050LDevice1" LogicalNodeName="LLN0" FunctionalConstraint="9" DataName="RCB1.DatSet" MMSDataType="12" DataMaxLength="129" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_AXC_1050" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 5</Name>
+<VariableList/>
+<TotalJobSize>1</TotalJobSize>
+<TagList>
+<Tag variable="IED_AXC_1050LDevice1_LLN0_RP_RCB1_GI" type="0" offset="0" size="1">IED_AXC_1050LDevice1_LLN0_RP_RCB1_GI</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_AXC_1050LDevice1" LogicalNodeName="LLN0" FunctionalConstraint="9" DataName="RCB1.GI" MMSDataType="0" DataMaxLength="0" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_AXC_1050" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 6</Name>
+<VariableList/>
+<TotalJobSize>4</TotalJobSize>
+<TagList>
+<Tag variable="IED_AXC_1050LDevice1_LLN0_RP_RCB1_IntgPd" type="6" offset="0" size="4">IED_AXC_1050LDevice1_LLN0_RP_RCB1_IntgPd</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_AXC_1050LDevice1" LogicalNodeName="LLN0" FunctionalConstraint="9" DataName="RCB1.IntgPd" MMSDataType="6" DataMaxLength="0" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_AXC_1050" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 7</Name>
+<VariableList/>
+<TotalJobSize>2</TotalJobSize>
+<TagList>
+<Tag variable="IED_AXC_1050LDevice1_LLN0_RP_RCB1_OptFlds" type="4" offset="0" size="2">IED_AXC_1050LDevice1_LLN0_RP_RCB1_OptFlds</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_AXC_1050LDevice1" LogicalNodeName="LLN0" FunctionalConstraint="9" DataName="RCB1.OptFlds" MMSDataType="9" DataMaxLength="10" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_AXC_1050" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 8</Name>
+<VariableList/>
+<TotalJobSize>192</TotalJobSize>
+<TagList>
+<Tag variable="IED_AXC_1050LDevice1_LLN0_RP_RCB1_Owner" type="9" offset="0" size="192">IED_AXC_1050LDevice1_LLN0_RP_RCB1_Owner</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_AXC_1050LDevice1" LogicalNodeName="LLN0" FunctionalConstraint="9" DataName="RCB1.Owner" MMSDataType="10" DataMaxLength="64" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_AXC_1050" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 9</Name>
+<VariableList/>
+<TotalJobSize>1</TotalJobSize>
+<TagList>
+<Tag variable="IED_AXC_1050LDevice1_LLN0_RP_RCB1_Resv" type="0" offset="0" size="1">IED_AXC_1050LDevice1_LLN0_RP_RCB1_Resv</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_AXC_1050LDevice1" LogicalNodeName="LLN0" FunctionalConstraint="9" DataName="RCB1.Resv" MMSDataType="0" DataMaxLength="0" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_AXC_1050" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 10</Name>
+<VariableList/>
+<TotalJobSize>1</TotalJobSize>
+<TagList>
+<Tag variable="IED_AXC_1050LDevice1_LLN0_RP_RCB1_RptEna" type="0" offset="0" size="1">IED_AXC_1050LDevice1_LLN0_RP_RCB1_RptEna</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_AXC_1050LDevice1" LogicalNodeName="LLN0" FunctionalConstraint="9" DataName="RCB1.RptEna" MMSDataType="0" DataMaxLength="0" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_AXC_1050" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 11</Name>
+<VariableList/>
+<TotalJobSize>64</TotalJobSize>
+<TagList>
+<Tag variable="IED_AXC_1050LDevice1_LLN0_RP_RCB1_RptID" type="9" offset="0" size="64">IED_AXC_1050LDevice1_LLN0_RP_RCB1_RptID</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_AXC_1050LDevice1" LogicalNodeName="LLN0" FunctionalConstraint="9" DataName="RCB1.RptID" MMSDataType="12" DataMaxLength="64" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_AXC_1050" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 12</Name>
+<VariableList/>
+<TotalJobSize>4</TotalJobSize>
+<TagList>
+<Tag variable="IED_AXC_1050LDevice1_LLN0_RP_RCB1_SqNum" type="6" offset="0" size="4">IED_AXC_1050LDevice1_LLN0_RP_RCB1_SqNum</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_AXC_1050LDevice1" LogicalNodeName="LLN0" FunctionalConstraint="9" DataName="RCB1.SqNum" MMSDataType="6" DataMaxLength="0" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_AXC_1050" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 13</Name>
+<VariableList/>
+<TotalJobSize>1</TotalJobSize>
+<TagList>
+<Tag variable="IED_AXC_1050LDevice1_LLN0_RP_RCB1_TrgOps" type="2" offset="0" size="1">IED_AXC_1050LDevice1_LLN0_RP_RCB1_TrgOps</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_AXC_1050LDevice1" LogicalNodeName="LLN0" FunctionalConstraint="9" DataName="RCB1.TrgOps" MMSDataType="9" DataMaxLength="6" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="0" Station="IED_BK_SAS" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 14</Name>
+<VariableList/>
+<TotalJobSize>1</TotalJobSize>
+<TagList>
+<Tag variable="IED_BK_SASLDevice1_LLN0_BR_RCB1_IED_BK_SASLDevice1_GGIO1_ST_Ind1_stVal" type="0" offset="0" size="1">IED_BK_SASLDevice1_LLN0_BR_RCB1_IED_BK_SASLDevice1_GGIO1_ST_Ind1_stVal</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_BK_SASLDevice1" LogicalNodeName="GGIO1" FunctionalConstraint="1" DataName="Ind1.stVal" MMSDataType="0" DataMaxLength="0" RetryOutput="false" ReportDevice="IED_BK_SASLDevice1" ReportNode="LLN0" ReportName="RCB101" ReportType="1" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="0" Station="IED_BK_SAS" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 15</Name>
+<VariableList/>
+<TotalJobSize>51</TotalJobSize>
+<TagList>
+<Tag variable="IED_BK_SASLDevice1_LLN0_BR_RCB1_IED_BK_SASLDevice1_GGIO1_ST_Ind1_t" type="9" offset="0" size="51">IED_BK_SASLDevice1_LLN0_BR_RCB1_IED_BK_SASLDevice1_GGIO1_ST_Ind1_t</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_BK_SASLDevice1" LogicalNodeName="GGIO1" FunctionalConstraint="1" DataName="Ind1.t" MMSDataType="14" DataMaxLength="51" RetryOutput="false" ReportDevice="IED_BK_SASLDevice1" ReportNode="LLN0" ReportName="RCB101" ReportType="1" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_BK_SAS" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 16</Name>
+<VariableList/>
+<TotalJobSize>4</TotalJobSize>
+<TagList>
+<Tag variable="IED_BK_SASLDevice1_LLN0_BR_RCB1_BufTm" type="6" offset="0" size="4">IED_BK_SASLDevice1_LLN0_BR_RCB1_BufTm</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_BK_SASLDevice1" LogicalNodeName="LLN0" FunctionalConstraint="10" DataName="RCB1.BufTm" MMSDataType="6" DataMaxLength="0" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_BK_SAS" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 17</Name>
+<VariableList/>
+<TotalJobSize>4</TotalJobSize>
+<TagList>
+<Tag variable="IED_BK_SASLDevice1_LLN0_BR_RCB1_ConfRev" type="6" offset="0" size="4">IED_BK_SASLDevice1_LLN0_BR_RCB1_ConfRev</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_BK_SASLDevice1" LogicalNodeName="LLN0" FunctionalConstraint="10" DataName="RCB1.ConfRev" MMSDataType="6" DataMaxLength="0" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_BK_SAS" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 18</Name>
+<VariableList/>
+<TotalJobSize>129</TotalJobSize>
+<TagList>
+<Tag variable="IED_BK_SASLDevice1_LLN0_BR_RCB1_DatSet" type="9" offset="0" size="129">IED_BK_SASLDevice1_LLN0_BR_RCB1_DatSet</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_BK_SASLDevice1" LogicalNodeName="LLN0" FunctionalConstraint="10" DataName="RCB1.DatSet" MMSDataType="12" DataMaxLength="129" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_BK_SAS" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 19</Name>
+<VariableList/>
+<TotalJobSize>192</TotalJobSize>
+<TagList>
+<Tag variable="IED_BK_SASLDevice1_LLN0_BR_RCB1_EntryID" type="9" offset="0" size="192">IED_BK_SASLDevice1_LLN0_BR_RCB1_EntryID</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_BK_SASLDevice1" LogicalNodeName="LLN0" FunctionalConstraint="10" DataName="RCB1.EntryID" MMSDataType="10" DataMaxLength="64" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_BK_SAS" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 20</Name>
+<VariableList/>
+<TotalJobSize>1</TotalJobSize>
+<TagList>
+<Tag variable="IED_BK_SASLDevice1_LLN0_BR_RCB1_GI" type="0" offset="0" size="1">IED_BK_SASLDevice1_LLN0_BR_RCB1_GI</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_BK_SASLDevice1" LogicalNodeName="LLN0" FunctionalConstraint="10" DataName="RCB1.GI" MMSDataType="0" DataMaxLength="0" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_BK_SAS" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 21</Name>
+<VariableList/>
+<TotalJobSize>4</TotalJobSize>
+<TagList>
+<Tag variable="IED_BK_SASLDevice1_LLN0_BR_RCB1_IntgPd" type="6" offset="0" size="4">IED_BK_SASLDevice1_LLN0_BR_RCB1_IntgPd</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_BK_SASLDevice1" LogicalNodeName="LLN0" FunctionalConstraint="10" DataName="RCB1.IntgPd" MMSDataType="6" DataMaxLength="0" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_BK_SAS" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 22</Name>
+<VariableList/>
+<TotalJobSize>2</TotalJobSize>
+<TagList>
+<Tag variable="IED_BK_SASLDevice1_LLN0_BR_RCB1_OptFlds" type="4" offset="0" size="2">IED_BK_SASLDevice1_LLN0_BR_RCB1_OptFlds</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_BK_SASLDevice1" LogicalNodeName="LLN0" FunctionalConstraint="10" DataName="RCB1.OptFlds" MMSDataType="9" DataMaxLength="10" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_BK_SAS" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 23</Name>
+<VariableList/>
+<TotalJobSize>192</TotalJobSize>
+<TagList>
+<Tag variable="IED_BK_SASLDevice1_LLN0_BR_RCB1_Owner" type="9" offset="0" size="192">IED_BK_SASLDevice1_LLN0_BR_RCB1_Owner</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_BK_SASLDevice1" LogicalNodeName="LLN0" FunctionalConstraint="10" DataName="RCB1.Owner" MMSDataType="10" DataMaxLength="64" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_BK_SAS" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 24</Name>
+<VariableList/>
+<TotalJobSize>1</TotalJobSize>
+<TagList>
+<Tag variable="IED_BK_SASLDevice1_LLN0_BR_RCB1_PurgeBuf" type="0" offset="0" size="1">IED_BK_SASLDevice1_LLN0_BR_RCB1_PurgeBuf</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_BK_SASLDevice1" LogicalNodeName="LLN0" FunctionalConstraint="10" DataName="RCB1.PurgeBuf" MMSDataType="0" DataMaxLength="0" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_BK_SAS" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 25</Name>
+<VariableList/>
+<TotalJobSize>4</TotalJobSize>
+<TagList>
+<Tag variable="IED_BK_SASLDevice1_LLN0_BR_RCB1_ResvTms" type="6" offset="0" size="4">IED_BK_SASLDevice1_LLN0_BR_RCB1_ResvTms</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_BK_SASLDevice1" LogicalNodeName="LLN0" FunctionalConstraint="10" DataName="RCB1.ResvTms" MMSDataType="6" DataMaxLength="0" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_BK_SAS" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 26</Name>
+<VariableList/>
+<TotalJobSize>1</TotalJobSize>
+<TagList>
+<Tag variable="IED_BK_SASLDevice1_LLN0_BR_RCB1_RptEna" type="0" offset="0" size="1">IED_BK_SASLDevice1_LLN0_BR_RCB1_RptEna</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_BK_SASLDevice1" LogicalNodeName="LLN0" FunctionalConstraint="10" DataName="RCB1.RptEna" MMSDataType="0" DataMaxLength="0" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_BK_SAS" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 27</Name>
+<VariableList/>
+<TotalJobSize>64</TotalJobSize>
+<TagList>
+<Tag variable="IED_BK_SASLDevice1_LLN0_BR_RCB1_RptID" type="9" offset="0" size="64">IED_BK_SASLDevice1_LLN0_BR_RCB1_RptID</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_BK_SASLDevice1" LogicalNodeName="LLN0" FunctionalConstraint="10" DataName="RCB1.RptID" MMSDataType="12" DataMaxLength="64" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_BK_SAS" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 28</Name>
+<VariableList/>
+<TotalJobSize>4</TotalJobSize>
+<TagList>
+<Tag variable="IED_BK_SASLDevice1_LLN0_BR_RCB1_SqNum" type="6" offset="0" size="4">IED_BK_SASLDevice1_LLN0_BR_RCB1_SqNum</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_BK_SASLDevice1" LogicalNodeName="LLN0" FunctionalConstraint="10" DataName="RCB1.SqNum" MMSDataType="6" DataMaxLength="0" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_BK_SAS" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 29</Name>
+<VariableList/>
+<TotalJobSize>51</TotalJobSize>
+<TagList>
+<Tag variable="IED_BK_SASLDevice1_LLN0_BR_RCB1_TimeOfEntry" type="9" offset="0" size="51">IED_BK_SASLDevice1_LLN0_BR_RCB1_TimeOfEntry</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_BK_SASLDevice1" LogicalNodeName="LLN0" FunctionalConstraint="10" DataName="RCB1.TimeOfEntry" MMSDataType="13" DataMaxLength="51" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+<Job>
+<Name Type="1" Station="IED_BK_SAS" PollingTime="0" PollingTimeNotInUse="0" ConditionalVariable="" SwapByte="false" SwapWord="false" IsDynamic="true" OutputAtStartup="false" VarAddressOffset="" SwapDWordB="false" ExpandGroup1="0">DynTask 30</Name>
+<VariableList/>
+<TotalJobSize>1</TotalJobSize>
+<TagList>
+<Tag variable="IED_BK_SASLDevice1_LLN0_BR_RCB1_TrgOps" type="2" offset="0" size="1">IED_BK_SASLDevice1_LLN0_BR_RCB1_TrgOps</Tag>
+</TagList>
+<IEC61850JobSettings LogicalDeviceName="IED_BK_SASLDevice1" LogicalNodeName="LLN0" FunctionalConstraint="10" DataName="RCB1.TrgOps" MMSDataType="9" DataMaxLength="6" RetryOutput="false" ReportDevice="" ReportNode="" ReportName="" ReportType="0" InitializeData="true" ExpandIEC61850Group1="0"/>
+</Job>
+</JobList>
+<DynamicJobMap>
+<DynKey>
+<KeyName>IED_AXC_1050J0DIED_AXC_1050LDevice1NGGIO1ISPCSO1.stValF1T0L0RDIED_AXC_1050LDevice1RNLLN0RRCB101RT0</KeyName>
+<JobName>DynTask 1</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_AXC_1050J1DIED_AXC_1050LDevice1NLLN0IRCB1.BufTmF9T6L0RDRNRRT0</KeyName>
+<JobName>DynTask 2</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_AXC_1050J1DIED_AXC_1050LDevice1NLLN0IRCB1.ConfRevF9T6L0RDRNRRT0</KeyName>
+<JobName>DynTask 3</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_AXC_1050J1DIED_AXC_1050LDevice1NLLN0IRCB1.DatSetF9T12L129RDRNRRT0</KeyName>
+<JobName>DynTask 4</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_AXC_1050J1DIED_AXC_1050LDevice1NLLN0IRCB1.GIF9T0L0RDRNRRT0</KeyName>
+<JobName>DynTask 5</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_AXC_1050J1DIED_AXC_1050LDevice1NLLN0IRCB1.IntgPdF9T6L0RDRNRRT0</KeyName>
+<JobName>DynTask 6</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_AXC_1050J1DIED_AXC_1050LDevice1NLLN0IRCB1.OptFldsF9T9L10RDRNRRT0</KeyName>
+<JobName>DynTask 7</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_AXC_1050J1DIED_AXC_1050LDevice1NLLN0IRCB1.OwnerF9T10L64RDRNRRT0</KeyName>
+<JobName>DynTask 8</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_AXC_1050J1DIED_AXC_1050LDevice1NLLN0IRCB1.ResvF9T0L0RDRNRRT0</KeyName>
+<JobName>DynTask 9</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_AXC_1050J1DIED_AXC_1050LDevice1NLLN0IRCB1.RptEnaF9T0L0RDRNRRT0</KeyName>
+<JobName>DynTask 10</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_AXC_1050J1DIED_AXC_1050LDevice1NLLN0IRCB1.RptIDF9T12L64RDRNRRT0</KeyName>
+<JobName>DynTask 11</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_AXC_1050J1DIED_AXC_1050LDevice1NLLN0IRCB1.SqNumF9T6L0RDRNRRT0</KeyName>
+<JobName>DynTask 12</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_AXC_1050J1DIED_AXC_1050LDevice1NLLN0IRCB1.TrgOpsF9T9L6RDRNRRT0</KeyName>
+<JobName>DynTask 13</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_BK_SASJ0DIED_BK_SASLDevice1NGGIO1IInd1.stValF1T0L0RDIED_BK_SASLDevice1RNLLN0RRCB101RT1</KeyName>
+<JobName>DynTask 14</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_BK_SASJ0DIED_BK_SASLDevice1NGGIO1IInd1.tF1T14L51RDIED_BK_SASLDevice1RNLLN0RRCB101RT1</KeyName>
+<JobName>DynTask 15</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_BK_SASJ1DIED_BK_SASLDevice1NLLN0IRCB1.BufTmF10T6L0RDRNRRT0</KeyName>
+<JobName>DynTask 16</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_BK_SASJ1DIED_BK_SASLDevice1NLLN0IRCB1.ConfRevF10T6L0RDRNRRT0</KeyName>
+<JobName>DynTask 17</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_BK_SASJ1DIED_BK_SASLDevice1NLLN0IRCB1.DatSetF10T12L129RDRNRRT0</KeyName>
+<JobName>DynTask 18</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_BK_SASJ1DIED_BK_SASLDevice1NLLN0IRCB1.EntryIDF10T10L64RDRNRRT0</KeyName>
+<JobName>DynTask 19</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_BK_SASJ1DIED_BK_SASLDevice1NLLN0IRCB1.GIF10T0L0RDRNRRT0</KeyName>
+<JobName>DynTask 20</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_BK_SASJ1DIED_BK_SASLDevice1NLLN0IRCB1.IntgPdF10T6L0RDRNRRT0</KeyName>
+<JobName>DynTask 21</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_BK_SASJ1DIED_BK_SASLDevice1NLLN0IRCB1.OptFldsF10T9L10RDRNRRT0</KeyName>
+<JobName>DynTask 22</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_BK_SASJ1DIED_BK_SASLDevice1NLLN0IRCB1.OwnerF10T10L64RDRNRRT0</KeyName>
+<JobName>DynTask 23</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_BK_SASJ1DIED_BK_SASLDevice1NLLN0IRCB1.PurgeBufF10T0L0RDRNRRT0</KeyName>
+<JobName>DynTask 24</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_BK_SASJ1DIED_BK_SASLDevice1NLLN0IRCB1.ResvTmsF10T6L0RDRNRRT0</KeyName>
+<JobName>DynTask 25</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_BK_SASJ1DIED_BK_SASLDevice1NLLN0IRCB1.RptEnaF10T0L0RDRNRRT0</KeyName>
+<JobName>DynTask 26</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_BK_SASJ1DIED_BK_SASLDevice1NLLN0IRCB1.RptIDF10T12L64RDRNRRT0</KeyName>
+<JobName>DynTask 27</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_BK_SASJ1DIED_BK_SASLDevice1NLLN0IRCB1.SqNumF10T6L0RDRNRRT0</KeyName>
+<JobName>DynTask 28</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_BK_SASJ1DIED_BK_SASLDevice1NLLN0IRCB1.TimeOfEntryF10T13L51RDRNRRT0</KeyName>
+<JobName>DynTask 29</JobName>
+</DynKey>
+<DynKey>
+<KeyName>IED_BK_SASJ1DIED_BK_SASLDevice1NLLN0IRCB1.TrgOpsF10T9L6RDRNRRT0</KeyName>
+<JobName>DynTask 30</JobName>
+</DynKey>
+</DynamicJobMap>
+</DriverSettings>

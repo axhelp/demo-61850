@@ -1,0 +1,7 @@
+<ADD>@ROOT.XML</ADD>
+<ADD>@LIBS.XML</ADD>
+<ADD>@TYPES.sys_flag_types.XML</ADD>
+<ADD>@POUS.Main.XML</ADD>
+<ADD>@HW.ZIP</ADD>
+<ADD>@HW.XML</ADD>
+<ADD>@POUS.SignalLamp.XML</ADD>

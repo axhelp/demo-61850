@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project Name="Project1">
+  <IEDStructure Name="IED_BK_SAS" ref=".\IED_BK_SAS.iid" ReadOnly="False" />
+  <IEDStructure Name="IED_AXC_1050" ref=".\IED_AXC_1050.iid" ReadOnly="False" />
+  <CommunicationStructure Name="Network1" ref=".\Network1.xml" ReadOnly="False">
+    <Settings>
+      <ConnectedAP-Addresses>
+<ArrayOfPSetting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PSetting>
+    <P xmlns:q1="http://www.iec.ch/61850/2003/SCL" xsi:type="q1:tP_IP" type="IP">0.0.0.0</P>
+    <BuildStrategyName>IP_AddressBuilder</BuildStrategyName>
+  </PSetting>
+  <PSetting>
+    <P xmlns:q2="http://www.iec.ch/61850/2003/SCL" xsi:type="q2:tP_IP-SUBNET" type="IP-SUBNET">255.255.255.0</P>
+  </PSetting>
+  <PSetting>
+    <P xmlns:q3="http://www.iec.ch/61850/2003/SCL" xsi:type="q3:tP_IP-GATEWAY" type="IP-GATEWAY">0.0.0.0</P>
+  </PSetting>
+  <PSetting>
+    <P xmlns:q4="http://www.iec.ch/61850/2003/SCL" xsi:type="q4:tP_OSI-PSEL" type="OSI-PSEL">00000001</P>
+  </PSetting>
+  <PSetting>
+    <P xmlns:q5="http://www.iec.ch/61850/2003/SCL" xsi:type="q5:tP_OSI-SSEL" type="OSI-SSEL">0001</P>
+  </PSetting>
+  <PSetting>
+    <P xmlns:q6="http://www.iec.ch/61850/2003/SCL" xsi:type="q6:tP_OSI-TSEL" type="OSI-TSEL">0001</P>
+  </PSetting>
+</ArrayOfPSetting></ConnectedAP-Addresses>
+      <GSE-Addresses>
+<ArrayOfPSetting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PSetting>
+    <P xmlns:q1="http://www.iec.ch/61850/2003/SCL" xsi:type="q1:tP_MAC-Address" type="MAC-Address">01-0C-CD-01-xx-xx</P>
+  </PSetting>
+</ArrayOfPSetting></GSE-Addresses>
+      <GSE-MinTime>5</GSE-MinTime>
+      <GSE-MaxTime>2000</GSE-MaxTime>
+      <SMV-Addresses>
+<ArrayOfPSetting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PSetting>
+    <P xmlns:q1="http://www.iec.ch/61850/2003/SCL" xsi:type="q1:tP_MAC-Address" type="MAC-Address">01-0C-CD-04-xx-xx</P>
+  </PSetting>
+</ArrayOfPSetting></SMV-Addresses>
+    </Settings>
+  </CommunicationStructure>
+  <SubstationStructure Name="demo_61850" ref=".\demo_61850.ssd" ReadOnly="False" />
+  <Settings>
+    <IED />
+    <Substation />
+    <IEC61850_P6 />
+  </Settings>
+</Project>

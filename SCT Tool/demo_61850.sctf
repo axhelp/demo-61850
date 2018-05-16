@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProjectFolder Name="demo_61850">
+  <TypeLibReference ref="" linked="False" />
+  <Settings>
+    <SCLDefaultObjects><![CDATA[<?xml version="1.0"?>
+<ArrayOfDefaultSetting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DefaultSetting>
+    <TypeAssemblyName>ESL.SCL, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null</TypeAssemblyName>
+    <TypeFullname>ESL.SCL.tLDevice</TypeFullname>&lt;?xml version="1.0"?&gt;
+&lt;tLDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;LN0 lnClass="LLN0" inst="" xmlns="http://www.iec.ch/61850/2003/SCL" /&gt;
+  &lt;LN lnClass="LPHD" inst="1" xmlns="http://www.iec.ch/61850/2003/SCL" /&gt;
+&lt;/tLDevice&gt;</DefaultSetting>
+  <DefaultSetting>
+    <TypeAssemblyName>ESL.SCL, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null</TypeAssemblyName>
+    <TypeFullname>ESL.SCL.tReportControl</TypeFullname>&lt;?xml version="1.0"?&gt;
+&lt;tReportControl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" confRev="1"&gt;
+  &lt;TrgOps dchg="true" xmlns="http://www.iec.ch/61850/2003/SCL" /&gt;
+  &lt;OptFields xmlns="http://www.iec.ch/61850/2003/SCL" /&gt;
+&lt;/tReportControl&gt;</DefaultSetting>
+  <DefaultSetting>
+    <TypeAssemblyName>ESL.SCL, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null</TypeAssemblyName>
+    <TypeFullname>ESL.SCL.tGSEControl</TypeFullname>&lt;?xml version="1.0"?&gt;
+&lt;tGSEControl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" confRev="1" /&gt;</DefaultSetting>
+  <DefaultSetting>
+    <TypeAssemblyName>ESL.SCL, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null</TypeAssemblyName>
+    <TypeFullname>ESL.SCL.tServer</TypeFullname>&lt;?xml version="1.0"?&gt;
+&lt;tServer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Authentication xmlns="http://www.iec.ch/61850/2003/SCL" /&gt;
+&lt;/tServer&gt;</DefaultSetting>
+</ArrayOfDefaultSetting>]]></SCLDefaultObjects>
+  </Settings>
+  <Project Name="Project1" ref=".\Project1.sctfproj" />
+</ProjectFolder>

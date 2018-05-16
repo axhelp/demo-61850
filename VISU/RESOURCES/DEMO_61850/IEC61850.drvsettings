@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<DriverSettings>
+<GeneralSettings WaitTime="0" TimeOut="2000" SynchroStart="false" MinimumJobThreshold="5" DefRefreshTimeNotInUse="0" EnableCOMInterface="true" PollingTime="0" PollingTimeNotInUse="0" PriorityProtocolThread="0" BaseClassBuild="275" DriverVersion="184615946" AggregationLimit="0" DirectWriteIO="false" SetInUseStructureFields="false" SuspendTasksInError="false" szWinCEProtocolPriority="-1" ExpandGroup1="0"/>
+<Debug DebugWindow="false" MaxLogEntries="10000" LogFileName="" EnableLogFile="true" ExpandGroup2="0"/>
+<IEC61850DriverSettings DriverLicenseCode="" SessionSelector="00 01" PresentationSelector="00 00 00 01" ApplicationID="1.1.1.999" AEQualifier="12" AutomaticActivationOfReports="true" ExpandIECGroup1="0"/>
+<JobList/>
+<StationList>
+<Station>
+<Name MaxRetries="0" StateVariable="" ExpandGroup1="1">IED_AXC_1050</Name>
+<Server ServerAddress="192.168.1.102" ServerPort="102" BackupServerAddress="" SwitchServerTimeout="10000" LocalBoundAddress="" LocalBoundPort="0" UsePing="false" ExpandTcpGroup1="1"/>
+<Queue MaxReceive="1024" MaxSend="1024" ExpandTcpGroup2="0"/>
+<Timeouts RxTimeout="5000" TxTimeout="5000" ExpandTcpGroup3="0"/>
+<RASSettings PhoneBookEntry="" PhoneNumber="" UserName=" " Password=" " Retries="3" DisconnectAfterSecs="10" EnableRASCallOnThisStation="false" PromptForConnection="false" RetryAfterSecs="30" DialOnlyOnCommand="false" ExpandRasGroup1="0"/>
+<IEC61850StationSettings TransportSelector="00 01" SessionSelector="00 01" PresentationSelector="00 00 00 01" ApplicationID="1.1.1.999" AEQualifier="12" AuthenticationEnabled="false" AuthenticationPassword="" ExpandIECGroup1="0"/>
+</Station>
+<Station>
+<Name MaxRetries="0" StateVariable="" ExpandGroup1="1">IED_BK_SAS</Name>
+<Server ServerAddress="192.168.1.103" ServerPort="102" BackupServerAddress="" SwitchServerTimeout="10000" LocalBoundAddress="" LocalBoundPort="0" UsePing="false" ExpandTcpGroup1="1"/>
+<Queue MaxReceive="1024" MaxSend="1024" ExpandTcpGroup2="0"/>
+<Timeouts RxTimeout="5000" TxTimeout="5000" ExpandTcpGroup3="0"/>
+<RASSettings PhoneBookEntry="" PhoneNumber="" UserName=" " Password=" " Retries="3" DisconnectAfterSecs="10" EnableRASCallOnThisStation="false" PromptForConnection="false" RetryAfterSecs="30" DialOnlyOnCommand="false" ExpandRasGroup1="0"/>
+<IEC61850StationSettings TransportSelector="00 01" SessionSelector="00 01" PresentationSelector="00 00 00 01" ApplicationID="1.1.1.999" AEQualifier="12" AuthenticationEnabled="false" AuthenticationPassword="" ExpandIECGroup1="0"/>
+</Station>
+</StationList>
+</DriverSettings>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SCL xmlns="http://www.iec.ch/61850/2003/SCL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Header id="" />
+  <Communication>
+    <SubNetwork name="SubNetwork1">
+      <ConnectedAP iedName="IED_BK_SAS" apName="AP1">
+        <Address>
+          <P xsi:type="tP_IP" type="IP">192.168.1.103</P>
+          <P xsi:type="tP_IP-SUBNET" type="IP-SUBNET">255.255.255.0</P>
+          <P xsi:type="tP_IP-GATEWAY" type="IP-GATEWAY">0.0.0.0</P>
+          <P xsi:type="tP_OSI-PSEL" type="OSI-PSEL">00000001</P>
+          <P xsi:type="tP_OSI-SSEL" type="OSI-SSEL">0001</P>
+          <P xsi:type="tP_OSI-TSEL" type="OSI-TSEL">0001</P>
+        </Address>
+        <GSE ldInst="LDevice1" cbName="GCB1">
+          <Address>
+            <P xsi:type="tP_MAC-Address" type="MAC-Address">01-0C-CD-01-00-00</P>
+          </Address>
+          <MinTime unit="s" multiplier="m">10</MinTime>
+          <MaxTime unit="s" multiplier="m">1000</MaxTime>
+        </GSE>
+      </ConnectedAP>
+      <ConnectedAP iedName="IED_AXC_1050" apName="AP1">
+        <Address>
+          <P xsi:type="tP_IP" type="IP">192.168.1.102</P>
+          <P xsi:type="tP_IP-SUBNET" type="IP-SUBNET">255.255.255.0</P>
+          <P xsi:type="tP_IP-GATEWAY" type="IP-GATEWAY">0.0.0.0</P>
+          <P xsi:type="tP_OSI-PSEL" type="OSI-PSEL">00000001</P>
+          <P xsi:type="tP_OSI-SSEL" type="OSI-SSEL">0001</P>
+          <P xsi:type="tP_OSI-TSEL" type="OSI-TSEL">0001</P>
+        </Address>
+      </ConnectedAP>
+    </SubNetwork>
+  </Communication>
+</SCL>

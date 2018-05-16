@@ -1,0 +1,108 @@
+
+
+#CMD#
+#0x1703# FIBO_SM_RESET_DRV_REQ
+#0x0000# Parameter Count
+
+
+#CMD#
+#0x0306# FIBO_SM_INITIATE_LOAD_REQ
+#0x0003# Parameter Count
+#0x0001# New_Config
+#0x0001# Frame_Reference
+#0x0001# Device_Count
+
+
+#CMD#
+#0x0307# FIBO_SM_LOAD_CFG_REQ
+#0x0008# Parameter Count
+#0x0007# Used_Attributes
+#0x0001# Start_Entry_No
+#0x0001# Entry_Count
+#0x00C0# DEV_TYPE
+#0x0001# ..
+#0x0000# DEV_ID
+#0x00DD# ..
+#0x0001# DEV_LEN
+
+
+#CMD#
+#0x0308# FIBO_SM_TERMINATE_LOAD_REQ
+#0x0001# Parameter Count
+#0x0000# Default_Parameter
+
+
+#CMD#
+#0x0711# Activate_Configuration_Request
+#0x0001# Parameter Count
+#0x0001# Frame Reference
+
+
+#CMD#
+#0x0042# FIBO_PDI_WRITE_OBJECT_REQ
+#0x0005# Parameter Count
+#0x0001# Slot-ID
+#0x0000# reserved | Subslot
+#0xFF8D# Index
+#0x0001# Subindex | Length
+#0x0000# Byte 0
+
+
+#CMD#
+#0x0042# FIBO_PDI_WRITE_OBJECT_REQ
+#0x0005# Parameter Count
+#0x0001# Slot-ID
+#0x0000# reserved | Subslot
+#0xFF8F# Index
+#0x0001# Subindex | Length
+#0x0000# Byte 0
+
+
+#CMD#
+#0x0042# FIBO_PDI_WRITE_OBJECT_REQ
+#0x0005# Parameter Count
+#0x0001# Slot-ID
+#0x0000# reserved | Subslot
+#0x0014# Index
+#0x0002# Subindex | Length
+#0x0000# Byte 0 | Byte 1
+
+
+#CMD#
+#0x0042# FIBO_PDI_WRITE_OBJECT_REQ
+#0x0005# Parameter Count
+#0x0001# Slot-ID
+#0x0000# reserved | Subslot
+#0x0015# Index
+#0x0002# Subindex | Length
+#0x0000# Byte 0 | Byte 1
+
+
+#CMD#
+#0x0042# FIBO_PDI_WRITE_OBJECT_REQ
+#0x0005# Parameter Count
+#0x0001# Slot-ID
+#0x0000# reserved | Subslot
+#0x0016# Index
+#0x0002# Subindex | Length
+#0x0000# Byte 0 | Byte 1
+
+
+#CMD#
+#0x0714# FIBO_SM_ACTIVATE_SYNC_REQ
+#0x0009# Parameter Count
+#0x0000# Cycle Time High-Word
+#0x0000# Cycle Time Low-Word
+#0x0000# Change Time High-Word
+#0x0000# Change Time Low-Word
+#0x0000# InDelay High-Word
+#0x0000# InDelay Time Low-Word
+#0x0000# OutDelay Time High-Word
+#0x0000# OutDelay Time Low-Word
+#0x0000# Entry Count
+
+
+#CMD#
+#0x0701# FIBO_SM_ENABLE_DATA_OUTPUT_REQ
+#0x0001# Parameter Count
+#0x8000# CR

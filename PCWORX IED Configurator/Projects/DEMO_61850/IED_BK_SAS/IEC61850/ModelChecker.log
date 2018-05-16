@@ -1,0 +1,79 @@
+
+
+***********************************************************
+          LOGGING STARTED Thu May 17 02:43:50 2018
+***********************************************************
+
+2018-05-17 02:43:50.744 SLOGALWAYS (scl_srvr.c 625 ThreadId=0x1A2C (6700)) 
+  MMS-LITE-802-001 Version 6.0050
+
+2018-05-17 02:43:50.745 SLOGALWAYS (scl_srvr.c 627 ThreadId=0x1A2C (6700)) 
+  Initializing ...
+
+2018-05-17 02:43:50.745 SX_LOG_ERR (startup.c 167 ThreadId=0x1A2C (6700)) 
+  Unrecognized ParameterName 'DataMapFileName' at line 7 in 'C:\dev\demo_61850\PCWORX IED Configurator\Projects\DEMO_61850\IED_BK_SAS\IEC61850\startup_IED_BK_SAS.cfg'.
+
+2018-05-17 02:43:50.746 SX_LOG_ERR (startup.c 167 ThreadId=0x1A2C (6700)) 
+  Unrecognized ParameterName 'IP_Address' at line 9 in 'C:\dev\demo_61850\PCWORX IED Configurator\Projects\DEMO_61850\IED_BK_SAS\IEC61850\startup_IED_BK_SAS.cfg'.
+
+2018-05-17 02:43:50.746 SX_LOG_ERR (startup.c 167 ThreadId=0x1A2C (6700)) 
+  Unrecognized ParameterName 'DefaultGateway' at line 11 in 'C:\dev\demo_61850\PCWORX IED Configurator\Projects\DEMO_61850\IED_BK_SAS\IEC61850\startup_IED_BK_SAS.cfg'.
+
+2018-05-17 02:43:50.746 SX_LOG_ERR (startup.c 167 ThreadId=0x1A2C (6700)) 
+  Unrecognized ParameterName 'SubnetMask' at line 13 in 'C:\dev\demo_61850\PCWORX IED Configurator\Projects\DEMO_61850\IED_BK_SAS\IEC61850\startup_IED_BK_SAS.cfg'.
+
+2018-05-17 02:43:50.746 SX_LOG_ERR (startup.c 167 ThreadId=0x1A2C (6700)) 
+  Unrecognized ParameterName 'LocalBusErrorBehaviour' at line 17 in 'C:\dev\demo_61850\PCWORX IED Configurator\Projects\DEMO_61850\IED_BK_SAS\IEC61850\startup_IED_BK_SAS.cfg'.
+
+2018-05-17 02:43:50.753 MVLLOG_NERR (mvl_uca.c 2161 ThreadId=0x1A2C (6700)) 
+  Could not find leaf 'BR$RCB101$ResvTms'
+
+2018-05-17 02:43:50.753 MVLLOG_NERR (mvluleaf.c 378 ThreadId=0x1A2C (6700)) 
+  Cannot find leaf 'b$BR$RCB101$ResvTms'
+
+2018-05-17 02:43:50.753 MVLLOG_NERR (mvluleaf.c 480 ThreadId=0x1A2C (6700)) 
+  Could not set leaf b$BR$RCB101$ResvTms parameters
+
+2018-05-17 02:43:50.754 MVLLOG_NERR (mvl_uca.c 2161 ThreadId=0x1A2C (6700)) 
+  Could not find leaf 'BR$RCB102$ResvTms'
+
+2018-05-17 02:43:50.754 MVLLOG_NERR (mvluleaf.c 378 ThreadId=0x1A2C (6700)) 
+  Cannot find leaf 'b$BR$RCB102$ResvTms'
+
+2018-05-17 02:43:50.754 MVLLOG_NERR (mvluleaf.c 480 ThreadId=0x1A2C (6700)) 
+  Could not set leaf b$BR$RCB102$ResvTms parameters
+
+2018-05-17 02:43:50.754 MVLLOG_NERR (mvl_uca.c 2161 ThreadId=0x1A2C (6700)) 
+  Could not find leaf 'BR$RCB103$ResvTms'
+
+2018-05-17 02:43:50.754 MVLLOG_NERR (mvluleaf.c 378 ThreadId=0x1A2C (6700)) 
+  Cannot find leaf 'b$BR$RCB103$ResvTms'
+
+2018-05-17 02:43:50.754 MVLLOG_NERR (mvluleaf.c 480 ThreadId=0x1A2C (6700)) 
+  Could not set leaf b$BR$RCB103$ResvTms parameters
+
+2018-05-17 02:43:50.759 SLOGALWAYS (iec_rx.c 863 ThreadId=0x1A2C (6700)) 
+  Number of ExtRef elements = 0. Number of successful GOOSE Subscriptions = 0
+
+2018-05-17 02:43:50.760 SX_LOG_ERR (usermap.c 1120 ThreadId=0x1A2C (6700)) 
+  No mapping entries found for LD='IED_BK_SASLDevice1' in input file 'C:\Program Files (x86)\Phoenix Contact\Software Suite 184\PCWorxIEDConfigurator\bin\data\Validation\ModelChecker\datamap.cfg'.
+Dummy entries will be generated in output file 'C:\Users\konopkov\Documents\datamapout.cfg'.
+
+2018-05-17 02:43:50.900 SLOGALWAYS (scl_srvr.c 862 ThreadId=0x1A2C (6700)) 
+  Initialization complete, entering service loop
+
+2018-05-17 02:43:51.112 SLOGALWAYS (scl_srvr.c 1106 ThreadId=0x1A2C (6700)) 
+  DEBUG: Number of types in use after cleanup=0
+
+2018-05-17 02:43:51.112 MEM_LOG_DUMP (mem_chks.c 1338 ThreadId=0x1A2C (6700)) 
+  DYNAMIC MEMORY POINTER TABLE
+----------------------------  
+  Ptr 0x02F44B1C  Size    56  File : ..\..\src\gensock2.c #1248
+  Ptr 0x02F4FCC4  Size   104  File : ..\..\src\slogipc.c #0854
+  Ptr 0x02F4DECC  Size    10  File : ..\..\src\sx_dec.c #1023
+  Ptr 0x02F4CF2C  Size    26  File : ..\..\src\sx_dec.c #1023
+  ---- END OF MEMORY POINTER TABLE ----------
+  Total number of allocated pointers:   4
+  Total amount of memory allocated:     196 bytes 
+  Maximum number of pointers allocated: 240
+  Maximum amount of memory allocated:   1317827 bytes

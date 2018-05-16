@@ -1,0 +1,52 @@
+
+
+***********************************************************
+          LOGGING STARTED Thu May 17 02:43:51 2018
+***********************************************************
+
+2018-05-17 02:43:51.622 SLOGALWAYS (scl_srvr.c 625 ThreadId=0x8B8 (2232)) 
+  MMS-LITE-802-001 Version 6.0050
+
+2018-05-17 02:43:51.622 SLOGALWAYS (scl_srvr.c 627 ThreadId=0x8B8 (2232)) 
+  Initializing ...
+
+2018-05-17 02:43:51.622 SX_LOG_ERR (startup.c 167 ThreadId=0x8B8 (2232)) 
+  Unrecognized ParameterName 'DataMapFileName' at line 7 in 'C:\dev\demo_61850\PCWORX IED Configurator\Projects\DEMO_61850\IED_AXC_1050\IEC61850\startup_IED_AXC_1050.cfg'.
+
+2018-05-17 02:43:51.623 SX_LOG_ERR (startup.c 167 ThreadId=0x8B8 (2232)) 
+  Unrecognized ParameterName 'IP_Address' at line 9 in 'C:\dev\demo_61850\PCWORX IED Configurator\Projects\DEMO_61850\IED_AXC_1050\IEC61850\startup_IED_AXC_1050.cfg'.
+
+2018-05-17 02:43:51.623 SX_LOG_ERR (startup.c 167 ThreadId=0x8B8 (2232)) 
+  Unrecognized ParameterName 'DefaultGateway' at line 11 in 'C:\dev\demo_61850\PCWORX IED Configurator\Projects\DEMO_61850\IED_AXC_1050\IEC61850\startup_IED_AXC_1050.cfg'.
+
+2018-05-17 02:43:51.623 SX_LOG_ERR (startup.c 167 ThreadId=0x8B8 (2232)) 
+  Unrecognized ParameterName 'SubnetMask' at line 13 in 'C:\dev\demo_61850\PCWORX IED Configurator\Projects\DEMO_61850\IED_AXC_1050\IEC61850\startup_IED_AXC_1050.cfg'.
+
+2018-05-17 02:43:51.623 SX_LOG_ERR (startup.c 167 ThreadId=0x8B8 (2232)) 
+  Unrecognized ParameterName 'LocalBusErrorBehaviour' at line 17 in 'C:\dev\demo_61850\PCWORX IED Configurator\Projects\DEMO_61850\IED_AXC_1050\IEC61850\startup_IED_AXC_1050.cfg'.
+
+2018-05-17 02:43:51.639 SLOGALWAYS (iec_rx.c 863 ThreadId=0x8B8 (2232)) 
+  Number of ExtRef elements = 0. Number of successful GOOSE Subscriptions = 0
+
+2018-05-17 02:43:51.640 SX_LOG_ERR (usermap.c 1120 ThreadId=0x8B8 (2232)) 
+  No mapping entries found for LD='IED_AXC_1050LDevice1' in input file 'C:\Program Files (x86)\Phoenix Contact\Software Suite 184\PCWorxIEDConfigurator\bin\data\Validation\ModelChecker\datamap.cfg'.
+Dummy entries will be generated in output file 'C:\Users\konopkov\Documents\datamapout.cfg'.
+
+2018-05-17 02:43:51.817 SLOGALWAYS (scl_srvr.c 862 ThreadId=0x8B8 (2232)) 
+  Initialization complete, entering service loop
+
+2018-05-17 02:43:52.049 SLOGALWAYS (scl_srvr.c 1106 ThreadId=0x8B8 (2232)) 
+  DEBUG: Number of types in use after cleanup=0
+
+2018-05-17 02:43:52.049 MEM_LOG_DUMP (mem_chks.c 1338 ThreadId=0x8B8 (2232)) 
+  DYNAMIC MEMORY POINTER TABLE
+----------------------------  
+  Ptr 0x02F7468C  Size    56  File : ..\..\src\gensock2.c #1248
+  Ptr 0x02F7F8B4  Size   104  File : ..\..\src\slogipc.c #0854
+  Ptr 0x02F7DFC4  Size    10  File : ..\..\src\sx_dec.c #1023
+  Ptr 0x02F7CE14  Size    26  File : ..\..\src\sx_dec.c #1023
+  ---- END OF MEMORY POINTER TABLE ----------
+  Total number of allocated pointers:   4
+  Total amount of memory allocated:     196 bytes 
+  Maximum number of pointers allocated: 270
+  Maximum amount of memory allocated:   1337453 bytes
