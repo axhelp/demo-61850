@@ -1,6 +1,6 @@
 <project xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.kw-software.com/xml/PLCopen/TC6_XML_V10_KW.xsd">
 	<fileHeader companyName="Phoenix Contact" companyURL="https://www.phoenixcontact-software.com" productName="PC WORX" productVersion="6.30" productRelease="Build 245" creationDateTime="2018-05-16T23:22:28" contentDescription="###XMLINFO=1;1;"/>
-	<contentHeader name="demo_61850" version="1526514334" modificationDateTime="2018-05-17T02:45:34" connectionCheck="true">
+	<contentHeader name="demo_61850" version="1526595558" modificationDateTime="2018-05-18T01:19:18" connectionCheck="true">
 		<coordinateInfo>
 			<pageSize x="999" y="9999"/>
 			<fbd>
@@ -27,16 +27,31 @@
 							<type>
 								<BOOL/>
 							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Положение выключателя</p>
+								</html>
+							</documentation>
 						</variable>
 						<variable name="BK_SAS_Ind1_t" address="%IB4" group="IEC61850">
 							<type>
 								<derived name="IEC61850_TIMESTAMP"/>
 							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Положение выключателя (метка времени)</p>
+								</html>
+							</documentation>
 						</variable>
 						<variable name="GGIO1_SPCSO_stVal" address="%QX4.0" group="IEC61850">
 							<type>
 								<BOOL/>
 							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Состояние дискретного выхода (сигнальная лампа)</p>
+								</html>
+							</documentation>
 						</variable>
 						<variable name="AXIO_DIAG_PARAM_2_REG_HI" address="%MB1.60005" group="System Variables">
 							<type>

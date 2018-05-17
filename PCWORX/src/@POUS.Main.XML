@@ -1,6 +1,6 @@
 <project xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.kw-software.com/xml/PLCopen/TC6_XML_V10_KW.xsd">
 	<fileHeader companyName="Phoenix Contact" companyURL="https://www.phoenixcontact-software.com" productName="PC WORX" productVersion="6.30" productRelease="Build 245" creationDateTime="2018-05-16T23:22:27" contentDescription="###XMLINFO=1;1;"/>
-	<contentHeader name="demo_61850" version="1526512251" modificationDateTime="2018-05-17T02:10:51" connectionCheck="true">
+	<contentHeader name="demo_61850" version="1526595536" modificationDateTime="2018-05-18T01:18:56" connectionCheck="true">
 		<coordinateInfo>
 			<pageSize x="999" y="9999"/>
 			<fbd>
@@ -17,32 +17,52 @@
 	<types>
 		<dataTypes/>
 		<pous>
-			<pou name="Main" pouType="program" lastChange="2018-05-17T02:10:51">
+			<pou name="Main" pouType="program" lastChange="2018-05-18T01:18:56">
 				<interface>
-					<localVars retain="false">
-						<variable name="SignalLamp_1" group="Default">
-							<type>
-								<derived name="SignalLamp"/>
-							</type>
-						</variable>
-					</localVars>
 					<externalVars retain="false">
-						<variable name="BK_SAS_Ind1_stVal" group="Default">
+						<variable name="BK_SAS_Ind1_stVal" group="External">
 							<type>
 								<BOOL/>
 							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Положение выключателя</p>
+								</html>
+							</documentation>
 						</variable>
-						<variable name="Q_1_OUT0" group="Default">
+						<variable name="BK_SAS_Ind1_t" group="External">
+							<type>
+								<derived name="IEC61850_TIMESTAMP"/>
+							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Положение выключателя (метка времени)</p>
+								</html>
+							</documentation>
+						</variable>
+						<variable name="GGIO1_SPCSO_stVal" group="External">
 							<type>
 								<BOOL/>
 							</type>
+							<documentation>
+								<html xmlns="http://www.w3.org/1999/xhtml">
+									<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml">Состояние дискретного выхода (сигнальная лампа)</p>
+								</html>
+							</documentation>
 						</variable>
-						<variable name="GGIO1_SPCSO_stVal" group="Default">
+						<variable name="Q_1_OUT0" group="External">
 							<type>
 								<BOOL/>
 							</type>
 						</variable>
 					</externalVars>
+					<localVars retain="false">
+						<variable name="SignalLamp_1" group="FB">
+							<type>
+								<derived name="SignalLamp"/>
+							</type>
+						</variable>
+					</localVars>
 				</interface>
 				<body>
 					<FBD>
